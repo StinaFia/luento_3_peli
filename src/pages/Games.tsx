@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { Ball } from "../components/Ball"
-import { Layout, Navigation, Points } from "../components/common"
+import { Layout, Navigation, Points, ResetButton } from "../components/common"
 import { useResize } from "../hooks/use_resize"
 import { randomInteger } from "../tools/common"
 import { useState } from "react"
@@ -15,7 +15,7 @@ export function Game() {
     const handleExplode = () => {
       setExplodedBalls(explodedBalls + 1)
     }
-    
+
     console.log("Räjähtäneet pallot: " + explodedBalls)
 
     // map suorittaa arrayn jokaisen itemin erikseen
@@ -28,16 +28,25 @@ export function Game() {
       return <Ball x={x} y={y} key ={i} exploded={handleExplode}></Ball>
       
     })
+
+    const resetGame = () => {
+      setExplodedBalls(0)
+    }
   
     return <Layout>
       {width}px {height}px
       Räjähtäneet pallot: {explodedBalls}
       <Navigation>
         <Link to={"/"}>Home</Link>
+      
+        <Points>{explodedBalls}</Points>
+        <ResetButton onClick={resetGame}>Reset Game</ResetButton>
+       
 
-        <Points></Points>
       </Navigation>
   
+      
+
       {allBalls}
   
     </Layout>

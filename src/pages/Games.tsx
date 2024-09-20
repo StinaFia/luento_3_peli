@@ -3,18 +3,14 @@ import { Ball } from "../components/Ball"
 import { Layout, Navigation, Points, ResetButton } from "../components/common"
 import { useResize } from "../hooks/use_resize"
 import { randomInteger } from "../tools/common"
-import { useState } from "react"
+//import { useState } from "react"
+import { GameState } from "../tools/gameState"
 
 export function Game() {
     const {width, height} = useResize()
 
-    // TEHTÄVÄ 2: alustetaan useState seuraamaan räjähtäneitä palloja
-    const [explodedBalls, setExplodedBalls] = useState(0)
-    
-    // TEHTÄVÄ 2: tapahtumankäsittelijä räjähtäneille palloille
-    const handleExplode = () => {
-      setExplodedBalls(explodedBalls + 1)
-    }
+    // TEHTÄVÄ 2: gameState filessä luotu hookki jolla seurataan räjähtäneitä palloja ja voi nollata pelin
+    const { explodedBalls, handleExplode, resetGame } = GameState();
 
     console.log("Räjähtäneet pallot: " + explodedBalls)
 
@@ -28,27 +24,22 @@ export function Game() {
       return <Ball x={x} y={y} key ={i} exploded={handleExplode}></Ball>
       
     })
-
-    const resetGame = () => {
-      setExplodedBalls(0)
-    }
   
     return <Layout>
       {width}px {height}px
       Räjähtäneet pallot: {explodedBalls}
+      
       <Navigation>
+
         <Link to={"/"}>Home</Link>
       
         <Points>{explodedBalls}</Points>
         <ResetButton onClick={resetGame}>Reset Game</ResetButton>
        
-
       </Navigation>
-  
-      
 
       {allBalls}
-  
+      
     </Layout>
-    
+
   }

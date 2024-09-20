@@ -7,6 +7,7 @@ height: 100vh;
 display: flex;
 flex-direction: column;
 gap: 10px;
+position: relative;
 `
 
 // Navigaatio palkin tyyli toimii "containerina" jonka sisään voidaan lisätä elementtejä

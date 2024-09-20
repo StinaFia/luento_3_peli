@@ -1,7 +1,7 @@
 import { useState, CSSProperties, useEffect } from "react"
 import { randomInteger } from "../tools/common"
 
-// TEHTÄVÄ 2: Lisää pallon propsiin exploded callback
+// TEHTÄVÄ 2: Lisää pallon propsiin exploded callback -> palauttaa tiedon onko pallo räjähtänyt
 type BallProps = {
     x: number
     y: number

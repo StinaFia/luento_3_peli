@@ -1,12 +1,14 @@
 import { useState, CSSProperties, useEffect } from "react"
 import { randomInteger } from "../tools/common"
 
+// TEHTÄVÄ 2: Lisää pallon propsiin exploded callback
 type BallProps = {
     x: number
     y: number
+    exploded: () => void
   }
   
-export function Ball({x,y}:BallProps) {
+export function Ball({x,y, exploded}:BallProps) {
   
     const [maxPoints, setMaxPoints] = useState(1)
     // määrittele lähtöarvo
@@ -41,6 +43,7 @@ export function Ball({x,y}:BallProps) {
     useEffect(()=>{
       if(points >= maxPoints){
         setIsAlive(false)
+        exploded()
       }
     },[points])
   
@@ -55,4 +58,5 @@ export function Ball({x,y}:BallProps) {
     return <div onClick={() => setPoints(points + 1) } style={style}>
       {points} / {maxPoints}
     </div>
+
   }

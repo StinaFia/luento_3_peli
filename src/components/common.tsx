@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+
 export const Layout = styled.div`
 background-color: darkkhaki;
 width: 100%;
@@ -55,3 +56,4 @@ border-radius: 5px;
 font-size: 16px;
 font-weight: bold;
 `
+

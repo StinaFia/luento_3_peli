@@ -1,11 +1,11 @@
 # BALL GAME
 
-User collects points by exploding colorful balls on the screen
+User collects points by exploding colorful balls on the screen.
 
 ## Built with
 
-* [![React][React.js]][React-url]
-* [![TypeScript][TypeScript]][TypeScript-url]
+- [![React][React.js]][React-url]
+- [![TypeScript][TypeScript]][TypeScript-url]
 
 
 ## Dependencies
@@ -46,14 +46,14 @@ npm run dev
 - https://github.com/StinaFia/luento_3_peli/tree/teht2
 
 ## Acknowledgments
-* https://github.com/othneildrew/Best-README-Template/blob/main/README.md?plain=1
-* https://ui.shadcn.com/docs/components/sonner
-* https://reactrouter.com/en/main/start/tutorial
-* https://styled-components.com/
-* https://www.markdownguide.org/
+- https://github.com/othneildrew/Best-README-Template/blob/main/README.md?plain=1
+- https://ui.shadcn.com/docs/components/sonner
+- https://reactrouter.com/en/main/start/tutorial
+- https://styled-components.com/
+- https://www.markdownguide.org/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[TypeScript]: https://www.typescriptlang.org/
+[TypeScript]: https://miro.medium.com/v2/resize:fit:1004/1*ZfCTE6kZArxc0Nr_MybXPQ.png
 [TypeScript-url]: https://www.typescriptlang.org/

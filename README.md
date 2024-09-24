@@ -6,21 +6,20 @@ Ball game is web based game where user collects points by exploding colorful bal
 
 - [![React][React.js]][React-url]
 - [![TypeScript][TypeScript]][TypeScript-url]
-- [Sonner-url]
-- [Styled-url]
+
 
 ## Dependencies
 
 To run the game you will need to install the following dependencies:
 
-- Sonner themes for toast notifications:
-```bash
-npm install sonner next-themes
-```
-
 - React-router for routing
 ```bash
 npm install react-router-dom
+```
+
+- Sonner themes for toast notifications:
+```bash
+npm install sonner next-themes
 ```
 
 - Styled-components for styled React components
@@ -30,18 +29,18 @@ npm install styled-components
 
 ## Running the application
 
-1. Clone the repository
+1. Clone the repository:
 ```bash
 git clone https://github.com/StinaFia/luento_3_peli.git
 cd luento_3_peli
 ```
 
-2. Install dependencies
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-In your IDE terminal run:
+3. Run the server:
 ```bash
 npm run dev
 ```

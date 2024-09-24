@@ -1,38 +1,52 @@
 # BALL GAME
 
-User collects points by exploding colorful balls on the screen.
+Ball game is web based game where user collects points by exploding colorful balls on the screen.
 
 ## Built with
 
 - [![React][React.js]][React-url]
 - [![TypeScript][TypeScript]][TypeScript-url]
-
+- [Sonner-url]
+- [Styled-url]
 
 ## Dependencies
 
-- Sonner themes:
-```properties
+To run the game you will need to install the following dependencies:
+
+- Sonner themes for toast notifications:
+```bash
 npm install sonner next-themes
 ```
 
-- React-router
-```properties
+- React-router for routing
+```bash
 npm install react-router-dom
 ```
 
-- Styled-components
-```properties
+- Styled-components for styled React components
+```bash
 npm install styled-components
 ```
 
 ## Running the application
 
+1. Clone the repository
+```bash
+git clone https://github.com/StinaFia/luento_3_peli.git
+cd luento_3_peli
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
 In your IDE terminal run:
-```properties
+```bash
 npm run dev
 ```
 
-- Open your localhost address
+4. Open your localhost address
 
 ## Play the game
 
@@ -52,8 +66,10 @@ npm run dev
 - https://styled-components.com/
 - https://www.markdownguide.org/
 
-<!-- MARKDOWN LINKS & IMAGES -->
+<!-- LINKS & IMAGES -->
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[TypeScript]: https://miro.medium.com/v2/resize:fit:1004/1*ZfCTE6kZArxc0Nr_MybXPQ.png
+[TypeScript]: https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square
 [TypeScript-url]: https://www.typescriptlang.org/
+[Sonner-url]: https://ui.shadcn.com/docs/components/sonner
+[Styled-url]: https://styled-components.com/

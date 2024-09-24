@@ -1,55 +1,31 @@
-# React + TypeScript + Vite
+# BALL GAME
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+User collects points by exploding colorful balls on the screen
 
-Currently, two official plugins are available:
+## Built with
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* [![React][React.js]][React-url]
+* [![TypeScript][TypeScript]][TypeScript-url]
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Dependencies
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Sonner themes:
+```properties
+npm install sonner next-themes
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+- React-router
+```properties
+npm install react-router-dom
 ```
 
-## Running the APPLICATION
+- Styled-components
+```properties
+npm install styled-components
+```
+
+## Running the application
 
 In your IDE terminal run:
 ```properties
@@ -58,3 +34,26 @@ npm run dev
 
 - Open your localhost address
 
+## Play the game
+
+- Fill your username
+- Enter the game from "Peliin!" button
+- Click on the balls until they disappear to collect points
+- You can reset the game anytime from the "Reset Game" button
+
+## Contact
+- stina.carlqvist@edu.lapinamk.fi
+- https://github.com/StinaFia/luento_3_peli/tree/teht2
+
+## Acknowledgments
+* https://github.com/othneildrew/Best-README-Template/blob/main/README.md?plain=1
+* https://ui.shadcn.com/docs/components/sonner
+* https://reactrouter.com/en/main/start/tutorial
+* https://styled-components.com/
+* https://www.markdownguide.org/
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[TypeScript]: https://www.typescriptlang.org/
+[TypeScript-url]: https://www.typescriptlang.org/

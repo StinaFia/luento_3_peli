@@ -52,9 +52,9 @@ export default tseslint.config({
 ## Running the APPLICATION
 
 In your IDE terminal run:
-```console
+```properties
 npm run dev
 ```
 
--> Open your localhost address
+- Open your localhost address
 

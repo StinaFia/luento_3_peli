@@ -48,3 +48,13 @@ export default tseslint.config({
   },
 })
 ```
+
+## Running the APPLICATION
+
+In your IDE terminal run:
+```console
+npm run dev
+```
+
+-> Open your localhost address
+
